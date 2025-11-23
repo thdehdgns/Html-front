@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main2</title>
     <link rel="stylesheet" href="Main2.css">
-    <script src="Script.js"></script>
-</head>
+    </head>
 <body>
     <nav>
-        <div onmousedown="Main2page()" class = "button">
-            <p>TeamCJF</p>
+        <div onmousedown="Main1page()" class = "button">
+            <p>Staem</p>
+        </div>
+        <div onmousedown="Loginpage()" class = "login">
+            <p>Login</p>
         </div>
     </nav>
     <header>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <button id="prevBtn" class="slider-btn">←</button>
+        <div class="image-box">
+            <img id="headimg" src="" alt="슬라이더 이미지">
+        </div>
+        <button id="nextBtn" class="slider-btn">→</button>
     </header>
+    
+    <script src="Script.js"></script> 
 </body>
 </html>

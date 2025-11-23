@@ -1,9 +1,11 @@
-body,html{
+body, html {
     margin: 0;
     padding: 0;
 }
-
-.button{
+nav{
+    display: flex;
+}
+.button {
     margin: 0;
     padding: 0;
     backdrop-filter: blur(10px);
@@ -15,7 +17,7 @@ body,html{
     left: 1%;
 }
 
-.button p{
+.button p {
     padding: 0%;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -26,7 +28,78 @@ body,html{
     font-weight: bold;
     user-select: none;
 }
+.login {
+    margin: 0px;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 100%;
+    /* 지정한 값만큼 이동 */
+    position: relative; 
+    left: 85%;
+}
 
-ul{
-    list-style: none;
+.login p {
+    padding: 0%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    user-select: none;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 800px;  
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: black;
+    /* 추가: 이미지가 꽉 채워졌을 때 배경 색을 가리므로 필요 없다면 제거 가능 */
+}
+
+
+.image-box {
+    z-index: 1; 
+    width: 100%; 
+    height: 100%;
+}
+
+header img {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%; 
+    
+}
+
+.slider-btn {
+    padding: 0px;
+    border-radius: 50%; 
+    width: 50px;       
+    height: 50px;      
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+#prevBtn {
+    left: 20px; 
+}
+
+#nextBtn {
+    right: 20px;
 }
