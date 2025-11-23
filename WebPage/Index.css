@@ -1,0 +1,39 @@
+.button{
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 100%;
+    /* 지정한 값만큼 이동 */
+    position: relative; 
+    left: 45%;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.953);
+}
+.button p{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+}
+header img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}

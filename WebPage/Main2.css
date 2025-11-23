@@ -1,0 +1,32 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 100%;
+    /* 지정한 값만큼 이동 */
+    position: relative; 
+    left: 1%;
+}
+
+.button p{
+    padding: 0%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+}
