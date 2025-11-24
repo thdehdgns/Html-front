@@ -1,29 +1,160 @@
+﻿* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-}
-nav{
-    display: flex;
-}
-.button {
-    margin: 0;
-    padding: 0;
-    backdrop-filter: blur(10px);
-    background-color: rgb(255, 255, 255);
-    width: 130px;
     height: 100%;
-    /* 지정한 값만큼 이동 */
-    position: relative; 
-    left: 1%;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at 20% 20%, #f8fbff 0, #f8fbff 35%, transparent 45%),
+                radial-gradient(circle at 80% 0%, #f3f6fb 0, #f3f6fb 30%, transparent 48%),
+                #ffffff;
+    color: #1f2933;
 }
-.button p {
-    padding: 0%;
+
+.logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 8px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 56px;
+    border: none;
+    border-radius: 0;
+    background: #ffffff;
+    color: #1f2933;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    color: black;
-    text-align: center;
-    line-height: 60px;
     font-size: 25px;
-    font-weight: bold;
-    user-select: none;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: none;
+    transition: none;
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 24px 48px;
+}
+
+.auth-card {
+    width: min(380px, 100%);
+    padding: 32px 28px 30px;
+    border: 1px solid #e7ecf2;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 18px 40px rgba(31, 41, 51, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subtext {
+    margin: 0 0 20px;
+    color: #52606d;
+    font-size: 14px;
+}
+
+.login-form {
+    display: grid;
+    gap: 12px;
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #364152;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d9e2ec;
+    font-size: 14px;
+    color: #1f2933;
+    background: #f8fafc;
+    transition: border 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 6px 0 4px;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #52606d;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: #3b82f6;
+}
+
+.text-link {
+    color: #3b82f6;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+}
+
+.footer {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #52606d;
 }
