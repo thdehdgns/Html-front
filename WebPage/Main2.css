@@ -190,8 +190,77 @@ header img {
     color: #cbd5e1;
 }
 
+.content-area {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+}
+
+.content-inner {
+    width: 100%;
+    min-height: 1200px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 16px;
+    justify-content: center;
+}
+
+.gallery-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-item {
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.game-caption {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 12px;
+    font-weight: 700;
+    color: #0f172a;
+    border-top: 1px solid #e5e7eb;
+    text-align: left;
+}
+
 @media (max-width: 900px) {
     .info-section {
         flex-direction: column;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .gallery-item,
+    .gallery-item img {
+        width: 100%;
+    }
+    .content-inner {
+        min-height: 2200px;
     }
 }
