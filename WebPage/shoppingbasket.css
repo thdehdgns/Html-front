@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.sb-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.sb-logo {
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.sb-wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sb-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.sb-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sb-card h1,
+.sb-card h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.sb-clear {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.sb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+}
+
+.sb-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+}
+
+.sb-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sb-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sb-meta {
+    color: #4b5563;
+    font-size: 13px;
+}
+
+.sb-remove {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.sb-empty {
+    text-align: center;
+    color: #6b7280;
+    padding: 12px 0;
+}
+
+.sb-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.sb-payments {
+    display: none;
+}
+
+.sb-select-label {
+    display: block;
+    margin: 10px 0 6px;
+    font-size: 13px;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.sb-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sb-purchase {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.sb-purchase:hover {
+    background: #f3f4f6;
+}

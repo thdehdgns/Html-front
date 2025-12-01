@@ -5,7 +5,7 @@
 nav{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 16px;
 }
 .button {
@@ -16,6 +16,28 @@ nav{
     width: 130px;
     height: 100%;
     position: relative;
+}
+
+.cart {
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 100%;
+    position: relative;
+}
+
+.cart p {
+    padding: 0%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    user-select: none;
 }
 
 .button p {
@@ -137,25 +159,9 @@ header img {
     min-height: 360px;
     justify-content: center;
     gap: 18px;
-}
-
-.info-card h2 {
-    margin: 0 0 8px;
-    font-size: 20px;
-    color: #0f172a;
-}
-
-.info-card p {
-    margin: 0;
-    color: #475569;
-    line-height: 1.5;
-}
-
-.account-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
     text-align: center;
 }
 
@@ -171,7 +177,7 @@ header img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     font-size: 14px;
     color: #1d4ed8;
 }
@@ -190,11 +196,298 @@ header img {
     color: #cbd5e1;
 }
 
+.info-card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.rec-slider {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    padding-top: 0; 
+}
+
+.rec-track {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    flex: 1;
+}
+
+.rec-slot {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 260px; 
+}
+
+.rec-slot img {
+    width: 100%;
+    height: 190px; 
+    object-fit: cover;
+}
+
+.rec-info {
+    padding: 8px 10px;
+}
+
+.rec-name {
+    margin: 0;
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.rec-price {
+    margin: 4px 0 0;
+    color: #475569;
+    font-size: 13px;
+}
+
+.rec-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: -40px; 
+}
+
+.rec-btn#recPrev {
+    right: 58px;
+}
+
+.rec-btn#recNext {
+    right: 10px;
+}
+
+.info-card p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    min-height: 360px;
+    justify-content: center;
+    gap: 18px;
+}
+
+.account-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.account-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #1d4ed8;
+}
+
+.text-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    color: #cbd5e1;
+}
+
+.info-card p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    min-height: 360px;
+    justify-content: center;
+}
+
+.account-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.account-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #1d4ed8;
+}
+
+.text-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    color: #cbd5e1;
+}
+
+
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+    min-height: 360px;
+    justify-content: center;
+    box-shadow: none; 
+}
+
+.account-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 30px); /* 좌우 15px 여백만 남기고 꽉 차게 */
+    max-width: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.account-btn.primary {
+    background: #868686;
+    color: #fff;
+}
+
+.account-btn.primary:hover {
+    background: #000000;
+}
+
+.account-btn.secondary {
+    font-size: 12px;
+    height: 35px;
+    background: #f1f5f9;
+    color: #0f172a;
+    border-color: #d0d7e2;
+}
+
+.account-btn.secondary:hover {
+    background: #e5e8ed;
+}
+
+.account-actions {
+    display: flex;
+    gap: 10px;
+    width: calc(100% - 30px); /* 좌우 15px 여백만 남기고 꽉 차게 */
+    max-width: none;
+    justify-content: center;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    min-height: 360px;
+    justify-content: center;
+}
+
+.account-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.account-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #1d4ed8;
+}
+
+.text-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    color: #cbd5e1;
+}
+
+
+
+
 .content-area {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto 32px;
     padding: 0 16px;
+}
+
+.content-title {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto 12px;
+    padding: 0 16px;
+}
+
+.content-title h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
 }
 
 .content-inner {
@@ -247,6 +540,14 @@ header img {
     color: #0f172a;
     border-top: 1px solid #e5e7eb;
     text-align: left;
+}
+
+.game-tags {
+    padding: 6px 12px 10px;
+    font-size: 12px;
+    color: #0f172a;
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
 }
 
 @media (max-width: 900px) {

@@ -5,17 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Page</title>
-    <link rel="stylesheet" href="Gamepage.css">
 </head>
 <body>
     <header>
         <nav>
-            <div onmousedown="Main1page()" class="button">
+            <div onmousedown="Main2page()" class="button">
                 <p>Staem</p>
             </div>
         </nav>
     </header>
-    <script src="Script.js"></script>
-</body>
-</html>
-
+    <main class="game-wrapper">
+        <section class="game-hero">
+            <h1 class="game-title" id="gameTitle">게임 제목</h1>
+            <img class="game-image" id="gameImage" src="" alt="게임 이미지">
+            <div class="game-meta">
+                <div class="meta-item">
+                    <span class="meta-label">장르</span>
+                    <span class="meta-value" id="gameGenre">-</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">가격</span>
+                    <span class="meta-value" id="gamePrice">-</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">출시일</span>
+                    <span class="meta-value" id="gameRelease">-</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="purchase-bar">
+        <button class="purchase-btn" id="purchaseBtn">장바구니에 담기</button>
+    </div>
+    <section class="game-details">
+        <div class="details-inner">
+            <h2 class="details-title">게임 설명</h2>
+            <p class="details-text" id="gameDesc">여기에 게임 설명 또는 추가 정보를 입력하세요.</p>
+        </div>
+    </section>
+    <script src="Script.js"></script> 
+</body> 
+</html> 

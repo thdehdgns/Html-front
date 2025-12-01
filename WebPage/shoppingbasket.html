@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <link rel="stylesheet" href="shoppingbasket.css">
+</head>
+<body>
+    <header class="sb-header">
+        <div class="sb-logo" onclick="location.href='Main2.html'">Staem</div>
+    </header>
+    <main class="sb-wrapper">
+        <section class="sb-card">
+            <div class="sb-card-header">
+                <h1>장바구니</h1>
+                <button class="sb-clear" id="clearCartBtn">비우기</button>
+            </div>
+            <ul class="sb-list" id="cartList"></ul>
+            <div class="sb-total">
+                <span>총 금액</span>
+                <strong id="cartTotal">₩0</strong>
+            </div>
+        </section>
+
+        <section class="sb-card">
+            <h2>구매 방법</h2>
+            <label class="sb-select-label" for="paymentSelect">결제 수단을 선택하세요</label>
+            <select id="paymentSelect" class="sb-select">
+                <option value="card">카드 결제</option>
+                <option value="toss">토스</option>
+                <option value="kakao">카카오페이</option>
+            </select>
+            <button class="sb-purchase" id="finalPurchaseBtn">구매</button>
+        </section>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
