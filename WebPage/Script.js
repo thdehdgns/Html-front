@@ -17,8 +17,19 @@ function Main1page() {
     location.href = "index.html";
 }
 
-function Loginpage() {
-    location.href = "Login.html";
+//function Loginpage() {\n    location.href = "Login.html";\n}\n\nfunction Cartpage() {\n    location.href = "shoppingbasket.html";\n}\n\nfunction Gamepage(idx) {\n    if (gameList[idx]) {\n        localStorage.setItem("selectedGame", JSON.stringify(gameList[idx]));\n        location.href = "gamepage.html";\n    }\n}
+
+function Cartpage() {
+    // 쇼핑버킷 페이지 이동
+    location.href = "shoppingbasket.html";
+}
+
+function Gamepage(idx) {
+    // 선택한 게임 저장 후 게임 상세 페이지 이동
+    if (gameList[idx]) {
+        localStorage.setItem("selectedGame", JSON.stringify(gameList[idx]));
+        location.href = "gamepage.html";
+    }
 }
 
 
@@ -311,3 +322,4 @@ function initBasketPage() {
 if (window.location.pathname.toLowerCase().includes("shoppingbasket")) {
     initBasketPage();
 }
+

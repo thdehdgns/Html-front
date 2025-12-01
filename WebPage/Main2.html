@@ -11,10 +11,11 @@
         <div onmousedown="Main1page()" class="button">
             <p>Staem</p>
         </div>
-        <div onmousedown="openPopupcart()" class="cart">
-            <p>장바구니</p>
+        <div onmousedown="Cartpage()" class="cart">
+            <p>Cart</p>
         </div>
     </nav>
+
     <header>
         <button id="prevBtn" class="slider-btn" aria-label="Previous slide">&lt;</button>
         <div class="image-box">
@@ -22,9 +23,10 @@
         </div>
         <button id="nextBtn" class="slider-btn" aria-label="Next slide">&gt;</button>
     </header>
+
     <main class="info-section">
         <article class="info-card">
-            <h2>추천 게임</h2>
+            <h2>異붿쿇 寃뚯엫</h2>
             <div class="rec-slider">
                 <button id="recPrev" class="rec-btn" aria-label="Previous games">&lt;</button>
                 <div class="rec-track">
@@ -49,76 +51,79 @@
         <article class="account-card">
             <a class="account-btn primary" onclick="openPopup()">Login</a>
             <div class="account-actions">
-                <a class="account-btn secondary" href="#">회원가입</a>
                 <a class="account-btn secondary" href="#">비밀번호 찾기</a>
+                <a class="account-btn secondary" href="#">회원가입</a>
             </div>
         </article>
     </main>
+
     <div class="content-title">
-        <h2>게임목록</h2>
+        <h2>추천게임</h2>
     </div>
     <section class="content-area">
         <div class="content-inner">
             <div class="gallery-grid">
-                <a class="gallery-link" href="gamepage.html" data-game-index="0">
+                <div class="gallery-link" onmousedown="Gamepage(0)">
                     <div class="gallery-item">
                         <img src="image/ori.jpg" alt="gallery item">
                         <div class="game-caption">Ori and the Blind Forest</div>
-                        <div class="game-tags">#플랫폼 #인기게임</div>
+                        <div class="game-tags">Platform / Adventure</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="1">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(1)">
                     <div class="gallery-item">
                         <img src="image/silksong.png" alt="gallery item">
                         <div class="game-caption">Hollow Knight: Silksong</div>
-                        <div class="game-tags">#메트로배니아 #인기게임</div>
+                        <div class="game-tags">Metroidvania / Action</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="2">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(2)">
                     <div class="gallery-item">
                         <img src="image/minecraft.png" alt="gallery item">
                         <div class="game-caption">Minecraft</div>
-                        <div class="game-tags">#샌드박스 #크리에이티브</div>
+                        <div class="game-tags">Sandbox / Creative</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="3">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(3)">
                     <div class="gallery-item">
                         <img src="image/little.webp" alt="gallery item">
-                        <div class="game-caption"> Little Nightmares</div>
-                        <div class="game-tags">#호러 #퍼즐</div>
+                        <div class="game-caption">Little Nightmares</div>
+                        <div class="game-tags">Horror / Puzzle Platformer</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="4">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(4)">
                     <div class="gallery-item">
                         <img src="image/STARDEWVALLEY.jpg" alt="gallery item">
                         <div class="game-caption">STARDEWVALLEY</div>
-                        <div class="game-tags">#농장 #힐링</div>
+                        <div class="game-tags">Farming / Sim</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="5">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(5)">
                     <div class="gallery-item">
                         <img src="image/FallGuys.webp" alt="gallery item">
                         <div class="game-caption">Fall Guys</div>
-                        <div class="game-tags">#파티 #멀티플레이</div>
+                        <div class="game-tags">Party / Multiplayer</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="6">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(6)">
                     <div class="gallery-item">
                         <img src="image/Terraria.webp" alt="gallery item">
                         <div class="game-caption">Terraria</div>
-                        <div class="game-tags">#탐험 #크래프팅</div>
+                        <div class="game-tags">Exploration / Crafting</div>
                     </div>
-                </a>
-                <a class="gallery-link" href="gamepage.html" data-game-index="7">
+                </div>
+                <div class="gallery-link" onmousedown="Gamepage(7)">
                     <div class="gallery-item">
                         <img src="image/monster.jpg" alt="gallery item">
                         <div class="game-caption">Monster Hunter Wilds</div>
-                        <div class="game-tags">#헌팅액션 #멀티플레이</div>
+                        <div class="game-tags">"Hunting Action</div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
-<script src="Script.js"></script> 
+    <script src="Script.js"></script>
 </body>
 </html>
+
+
