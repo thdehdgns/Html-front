@@ -28,7 +28,7 @@ function Gamepage(idx) {
     // 선택한 게임 저장 후 게임 상세 페이지 이동
     if (gameList[idx]) {
         localStorage.setItem("selectedGame", JSON.stringify(gameList[idx]));
-        location.href = "gamepage.html";
+        location.href = "Gamepage.html";
     }
 }
 
